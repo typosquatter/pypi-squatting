@@ -691,7 +691,7 @@ if __name__ == "__main__":
     
     variations_list = list()
 
-    package_name = args.packageName
+    package_name = args.packageName.lower()
     verbose = args.v
     givevariations = args.givevariations
     keeporiginal = args.keeporiginal
