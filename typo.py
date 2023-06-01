@@ -406,7 +406,7 @@ def replacement(package_name, variations_list, verbose, limit, givevariations, k
         
         loc_variations_list = list()
 
-        for i in (*range(48, 58), *range(65, 91), *range(97, 123)):
+        for i in (*range(48, 58), *range(97, 123)):
             for j in range(0, len(package_name)):
                 pre = package_name[:j]
                 suf = package_name[j+1:]
