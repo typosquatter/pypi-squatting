@@ -1,5 +1,47 @@
 # pypi-squatting
 
+Searching for typosquatted packages in PyPi.
+
+# Usage
+
+~~~
+usage: typo.py [-h] -p PACKAGENAME [-v] [-l LIMIT] [-var] [-ko] [-pr] [-o OUTPUT] [-fo FORMATOUTPUT] [-a] [-ada] [-add] [-cho] [-cddu] [-cm] [-hp] [-md] [-ns] [-om] [-repe] [-repl] [-sd] [-sp] [-vs]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PACKAGENAME, --packageName PACKAGENAME
+                        package name
+  -v                    verbose, more display
+  -l LIMIT, --limit LIMIT
+                        limit of variations
+  -var, --givevariations
+                        give the algo that generate variations
+  -ko, --keeporiginal   Keep in the result list the original package name
+  -pr, --pypiresolver   Find which variations is a package on pypi
+  -o OUTPUT, --output OUTPUT
+                        path to ouput location
+  -fo FORMATOUTPUT, --formatoutput FORMATOUTPUT
+                        format for the output file, yara - regex - yaml - text. Default: text
+  -a, --all             Use all algo
+  -ada, --adddash       Add a dash between the first and last character in a string
+  -add, --addition      Add a character
+  -cho, --changeorder   Change the order of letters in word
+  -cddu, --changedotdashunderscore
+                        Change dot to dash
+  -cm, --commonmisspelling
+                        Change a word by is misspellings
+  -hp, --homophones     Change word by an other who sound the same when spoken
+  -md, --missingdot     Delete dots one by one
+  -ns, --numeralswap    Change a numbers to words and vice versa. Ex: circlone.lu, circl1.lu
+  -om, --omission       Leave out a letter
+  -repe, --repetition   Character Repeat
+  -repl, --replacement  Character replacement
+  -sd, --stripdash      Delete of a dash
+  -sp, --singularpluralize
+                        Create by making a singular package name plural and vice versa
+  -vs, --vowelswap      Swap vowels
+~~~
+
 # List of algorithms used
 
 | Algo                    | Description                                                                                                                                                                                  |
